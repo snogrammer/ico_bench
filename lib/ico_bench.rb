@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 require 'active_support'
 require 'active_support/core_ext'
@@ -7,7 +7,7 @@ require 'http'
 require 'nokogiri'
 
 class IcoBench
-  BASE_URL = 'https://icobench.com'.freeze
+  BASE_URL = 'https://icobench.com'
 
   class << self
     # @param params [Hash] Query params. See #filters
