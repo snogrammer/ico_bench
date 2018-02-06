@@ -7,7 +7,7 @@ SimpleCov.start do
   add_filter '/spec/'
 end
 
-require 'icobench'
+require 'ico_bench'
 require 'webmock/rspec'
 require 'pry'
 

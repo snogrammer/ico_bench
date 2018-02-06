@@ -2,17 +2,17 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'icobench/version'
+require 'ico_bench/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'icobench'
+  spec.name          = 'ico_bench'
   spec.version       = IcoBench::VERSION
   spec.authors       = ['Kurt Smith']
   spec.email         = ['zippydev@protonmail.com']
 
-  spec.summary       = 'IcoBench data parser'
-  spec.description   = 'icobench.com data for the latest ICO token ratings and information'
-  spec.homepage      = 'https://github.com/kurt-smith/icobench'
+  spec.summary       = 'IcoBench ICO expert ratings and information'
+  spec.description   = 'IcoBench.com data for the latest ICO token ratings and information'
+  spec.homepage      = 'https://github.com/kurt-smith/ico_bench'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -34,11 +34,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'http',          '~> 3.0'
   spec.add_dependency 'nokogiri',      '~> 1.8'
 
-  spec.add_development_dependency 'bundler',    '~> 1.14'
-  spec.add_development_dependency 'pry',        '~> 0.11'
+  spec.add_development_dependency 'bundler',    '>= 1.14'
+  spec.add_development_dependency 'pry',        '>= 0.11'
   spec.add_development_dependency 'rake',       '~> 10.0'
   spec.add_development_dependency 'rspec',      '~> 3.7'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'webmock', '~> 3.2'
+  spec.add_development_dependency 'rubocop',    '>= 0.52'
+  spec.add_development_dependency 'simplecov',  '>= 0.15'
+  spec.add_development_dependency 'webmock',    '~> 3.2'
 end
